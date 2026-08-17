@@ -14,13 +14,13 @@ Identificar y cuantificar los factores que explican el nivel de actividad econó
 ## Objetivos específicos
 
 - Construir un dataset panel (departamento × año) integrando el índice de actividad económica departamental con variables socioeconómicas de fuentes oficiales.
-- Explorar mediante análisis exploratorio (EDA) la relación entre cada variable predictora y el nivel de actividad económica. ????
-- Estimar un modelo de regresión (lineal múltiple / panel data) que explique el peso relativo de cada factor. ????
+- Explorar mediante análisis exploratorio (EDA) la relación entre cada variable predictora y el nivel de actividad económica. ???
+- Estimar un modelo de regresión (lineal múltiple / panel data) que explique el peso relativo de cada factor. ???
 - Identificar departamentos cuyo nivel de actividad económica se desvía de lo que predice su perfil socioeconómico (análisis de residuos).
 
 ## Datos a utilizar
 
-Panel departamento-año, 19 departamentos, período acotado a **2008-2018** (ver limitaciones).
+Panel departamento-año, 19 departamentos, período acotado a **2008-2018** .
 
 ### Variable dependiente
 
@@ -39,15 +39,13 @@ Panel departamento-año, 19 departamentos, período acotado a **2008-2018** (ver
 | Esperanza de vida al nacer según sexo, por departamento | MIDES — Observatorio Social (INE) | https://www.gub.uy/ministerio-desarrollo-social/indicador/esperanza-vida-nacer-segun-sexo-departamento-total-pais | Variable |
 | Nivel educativo máximo alcanzado (mayores de 24 años) por departamento | MIDES — Observatorio Social (INE-ECH) | https://www.gub.uy/ministerio-desarrollo-social/indicador/distribucion-porcentual-personas-mayores-24-anos-segun-maximo-nivel-educativo-alcanzado-4 | 2006-2023 |
 | Tasa de analfabetismo (15 años y más) por departamento | MIDES — Observatorio Social (INE-ECH) | https://www.gub.uy/ministerio-desarrollo-social/indicador/tasa-analfabetismo-personas-15-anos-segun-departamento-total-pais | 2006-2023 |
-| Población por sexo, según departamento | MIDES — Observatorio Social (INE, Censos) | https://www.gub.uy/ministerio-desarrollo-social/indicador/distribucion-porcentual-personas-segun-departamento-sexo-censos-1963-2011 | Hasta 2011 |
-| Población por tramo de edad, según departamento | MIDES — Observatorio Social (INE, Estimaciones y Proyecciones) | https://www.gub.uy/ministerio-desarrollo-social/indicador/distribucion-porcentual-poblacion-segun-departamentos-tramos-edad-total-pais | Hasta 2019 |
+| Población por sexo y edad, según departamento | INE — Estimaciones y Proyecciones de Población | https://www.gub.uy/instituto-nacional-estadistica/datos-y-estadisticas/estadisticas/estimaciones-proyecciones | 1996-2025 |
 
 
 
-## Decisiones:
+## Decisiones
 
 - **Ventana temporal**: el IDAE (variable dependiente) solo tiene datos públicos hasta 2018. El panel final del modelo va a quedar acotado a 2008-2018, aunque varias variables explicativas tengan series más largas.
-- **Población**: las series de MIDES para población por sexo y por tramo de edad no llegan a 2018/2023. Se recomienda reemplazarlas por las "Estimaciones y Proyecciones de Población" del INE, que tienen series más largas y actualizadas, para no perder años del panel.
 - **n pequeño**: con 19 departamentos y ~11 años, el panel tiene ~200 observaciones, pero muchas variables van a estar correlacionadas entre sí (ej. pobreza y desempleo). Conviene revisar multicolinealidad antes de interpretar coeficientes.
 
 
