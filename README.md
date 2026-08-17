@@ -44,18 +44,10 @@ Panel departamento-año, 19 departamentos, período acotado a **2008-2018** (ver
 
 
 
-## Limitaciones y decisiones a tomar
+## Decisiones:
 
 - **Ventana temporal**: el IDAE (variable dependiente) solo tiene datos públicos hasta 2018. El panel final del modelo va a quedar acotado a 2008-2018, aunque varias variables explicativas tengan series más largas.
 - **Población**: las series de MIDES para población por sexo y por tramo de edad no llegan a 2018/2023. Se recomienda reemplazarlas por las "Estimaciones y Proyecciones de Población" del INE, que tienen series más largas y actualizadas, para no perder años del panel.
 - **n pequeño**: con 19 departamentos y ~11 años, el panel tiene ~200 observaciones, pero muchas variables van a estar correlacionadas entre sí (ej. pobreza y desempleo). Conviene revisar multicolinealidad antes de interpretar coeficientes.
 
-## Estructura del repositorio
 
-```
-/data/raw/          → excels/csv originales tal cual se descargan de cada fuente
-/data/processed/     → dataset panel limpio y unificado (departamento-año)
-/notebooks/          → exploración (EDA), limpieza, modelado
-/src/                → funciones de limpieza y construcción del panel
-README.md            → este archivo
-```
