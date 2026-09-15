@@ -37,8 +37,6 @@ Panel departamento-año, 19 departamentos, período acotado a **2008-2018** .
 | Pobreza (% de personas) por departamento | MIDES — Observatorio Social (INE-ECH) | https://www.gub.uy/ministerio-desarrollo-social/indicador/porcentaje-personas-situacion-pobreza-segun-departamento-total-pais | 2006-2023 |
 | Esperanza de vida al nacer según sexo, por departamento | MIDES — Observatorio Social (INE) | https://www.gub.uy/ministerio-desarrollo-social/indicador/esperanza-vida-nacer-segun-sexo-departamento-total-pais | Variable |
 | Nivel educativo máximo alcanzado (mayores de 24 años) por departamento | MIDES — Observatorio Social (INE-ECH) | https://www.gub.uy/ministerio-desarrollo-social/indicador/distribucion-porcentual-personas-mayores-24-anos-segun-maximo-nivel-educativo-alcanzado-4 | 2006-2023 |
-| Tasa de analfabetismo (15 años y más) por departamento | MIDES — Observatorio Social (INE-ECH) | https://www.gub.uy/ministerio-desarrollo-social/indicador/tasa-analfabetismo-personas-15-anos-segun-departamento-total-pais | 2006-2023 |
-| Población por sexo y edad, según departamento | INE — Estimaciones y Proyecciones de Población | https://www.gub.uy/instituto-nacional-estadistica/datos-y-estadisticas/estadisticas/estimaciones-proyecciones | 1996-2025 |
 | Si el departamento tiene o no puerto | [Puerto o no departamento.xlsx](https://github.com/user-attachments/files/31523105/Puerto.o.no.departamento.xlsx)
 
 
