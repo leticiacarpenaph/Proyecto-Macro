@@ -676,3 +676,56 @@ plt.legend(title="Género")
 plt.grid(alpha=0.3)
 plt.tight_layout()
 plt.show()
+
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_absolute_error, r2_score
+
+# 1. Crear variable de edad en años usando el dataset limpio
+datos_limpios["age_years"] = datos_limpios["age"] / 365
+
+# 2. El IMC ya fue calculado en los pasos previos, pero nos aseguramos de que esté
+# datos_limpios["imc"] = datos_limpios["weight"] / (datos_limpios["height"] / 100) ** 2
+
+# 3. Seleccionar las características que usaremos
+caracteristicas = [
+    "age_years", "gender", "height", "weight", "imc",
+    "cholesterol", "gluc", "smoke", "alco", "active"
+]
+
+X = datos_limpios[caracteristicas]
+
+# 4. Seleccionar las dos presiones que queremos predecir
+y = datos_limpios[["ap_hi", "ap_lo"]]
+
+# 5. Separar los datos para entrenar y evaluar
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
+
+# 6. Crear y entrenar los modelos
+modelo_hi = RandomForestRegressor(n_estimators=100, random_state=42)
+modelo_lo = RandomForestRegressor(n_estimators=100, random_state=42)
+
+modelo_hi.fit(X_train, y_train["ap_hi"])
+modelo_lo.fit(X_train, y_train["ap_lo"])
+
+# 7. Realizar predicciones
+pred_hi = modelo_hi.predict(X_test)
+pred_lo = modelo_lo.predict(X_test)
+
+# 8. Evaluar los resultados
+print("PRESIÓN SISTÓLICA")
+print("Error medio:", mean_absolute_error(y_test["ap_hi"], pred_hi))
+print("R2:", r2_score(y_test["ap_hi"], pred_hi))
+
+print("\nPRESIÓN DIASTÓLICA")
+print("Error medio:", mean_absolute_error(y_test["ap_lo"], pred_lo))
+print("R2:", r2_score(y_test["ap_lo"], pred_lo))
+
+# 9. Comparar valores reales y predichos
+comparacion = y_test.copy()
+comparacion["ap_hi_predicha"] = pred_hi
+comparacion["ap_lo_predicha"] = pred_lo
+
+print(comparacion.head(10))
