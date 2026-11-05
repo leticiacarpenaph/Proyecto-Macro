@@ -14,8 +14,8 @@ Identificar y cuantificar los factores que explican el nivel de actividad econó
 ## Objetivos específicos
 
 - Construir un dataset panel (departamento × año) integrando el índice de actividad económica departamental con variables socioeconómicas de fuentes oficiales.
-- Explorar mediante análisis exploratorio (EDA) la relación entre cada variable predictora y el nivel de actividad económica. ???
-- Estimar un modelo de regresión (lineal múltiple / panel data) que explique el peso relativo de cada factor. ???
+- Explorar mediante análisis exploratorio (EDA) la relación entre cada variable predictora y el nivel de actividad económica. 
+- Estimar un modelo de regresión (lineal múltiple / panel data) que explique el peso relativo de cada factor. 
 - Identificar departamentos cuyo nivel de actividad económica se desvía de lo que predice su perfil socioeconómico (análisis de residuos).
 
 ## Datos a utilizar
