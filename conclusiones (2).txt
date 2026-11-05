@@ -1,0 +1,91 @@
+======================================================================
+CONCLUSIONES DEL ANÁLISIS
+======================================================================
+
+0. VARIABLE A EXPLICAR
+  - Se explica: VAB per cápita relativo (Uruguay = 1).
+
+4. ESTADÍSTICA DESCRIPTIVA
+  - Mayor nivel de actividad promedio: Río Negro; menor: Canelones (2.2 veces más).
+  - La dispersión entre departamentos es alta (coeficiente de variación = 25%), lo que confirma la heterogeneidad territorial.
+  - En el interior, los de mayor actividad son Río Negro, Colonia, Maldonado.
+
+5. TENDENCIAS TEMPORALES
+  - La pobreza cae más rápido en Artigas (-2,09 p.p./año) y menos en Maldonado (-0,58 p.p./año). Ningún departamento muestra aumento.
+  - El desempleo no acompañó esa mejora: sube en 13 de 19 departamentos (el que más: Salto, 0,29 p.p./año).
+  - Hay convergencia: los departamentos que partían con más pobreza son los que más rápido la redujeron (r = -0.82 entre nivel inicial y tendencia).
+  - La actividad crece en 14 de 19 departamentos; más rápido en Río Negro y más lento en Flores.
+
+6. CORRELACIONES
+  - Actividad–Desempleo_%: r = -0.22 (débil, negativa).
+  - Actividad–Univ_%: r = 0.35 (moderada, positiva).
+  - Actividad–Pobreza_%: r = -0.51 (moderada, negativa).
+  - Actividad–Ingreso_percapita: r = 0.65 (fuerte, positiva).
+  - La variable más asociada a la actividad es Ingreso_percapita.
+  - La relación con pobreza es esperable y no explica nada por sí sola: la pobreza se mide a partir del ingreso, por eso no entra al modelo.
+
+7. MONTEVIDEO, INTERIOR Y PUERTO
+  - Montevideo tiene 1,43 veces la actividad promedio del interior y 3,7 veces su % con universidad.
+  - Aun así, Montevideo es el 4º departamento con más pobreza: concentra la actividad pero también la desigualdad.
+  - Interior con puerto (5 deptos) vs. sin puerto (13): actividad 1,01 vs. 0,83 -> diferencia no significativa (p = 0.387).
+
+8. MODELO
+  - El modelo (efectos fijos de año, errores por departamento) explica el 30% de la variación del nivel de actividad.
+  - Universidad (%): 1 p.p. más se asocia a -0,9% de actividad (no significativo, p = 0.695).
+  - Desempleo (%): 1 p.p. más se asocia a -3,1% de actividad (no significativo, p = 0.164).
+  - Puerto: tener puerto se asocia a 19,6% de actividad (no significativo, p = 0.177).
+  - Montevideo: ser Montevideo se asocia a 51,5% de actividad (no significativo, p = 0.315).
+  - Área metropolitana: ser del área metropolitana (Canelones, San José) se asocia a -6,5% de actividad (no significativo, p = 0.593).
+  - Por sí solo, el factor que más explica es Puerto (R² = 0.18).
+  - Son asociaciones, no efectos causales: un factor puede impulsar la actividad, pero también la actividad puede atraer ese factor (por ejemplo, gente más educada o inversión portuaria).
+  - Más actividad de la que predicen sus factores: Río Negro, Maldonado, Colonia. Menos: Salto, Artigas, Rivera. Ahí hay factores que el modelo no captura (turismo, agro, cercanía a Montevideo, frontera).
+
+9.1 RANKING DE ACTIVIDAD
+  - Los 3 de mayor actividad: Río Negro, Colonia, Montevideo. Los 3 de menor: Canelones, Artigas, Rivera.
+  - 4 departamento(s) superan en más de 20% a la mediana; no hay un departamento que se despegue claramente.
+
+9.2 MONTEVIDEO VS. INTERIOR EN EL TIEMPO
+  - La brecha Montevideo/interior pasó de 1,48 veces en 2006 a 1,41 en 2018: se achicó (convergencia).
+  - Montevideo alcanzó su máximo en 2016 y el interior en 2008; ambos se mueven juntos con el ciclo económico nacional.
+
+9.3 ACTIVIDAD VS. FACTORES
+  - Educación: relación moderada (r = 0.35). Sin Montevideo pasa a -0.03: casi desaparece, la relación la arrastra Montevideo.
+  - Desempleo: relación débil (r = -0.22); los departamentos con más desempleo no son sistemáticamente los de menor actividad.
+
+9.4 COEFICIENTES DEL MODELO
+  - Factores con efecto claro (intervalo no cruza 0): ninguno.
+  - Sin efecto distinguible de cero: Área metropolitana, Desempleo (%), Universidad (%), Puerto, Montevideo (con 19 departamentos el intervalo es amplio; no significa que no importen).
+
+9.5 OBSERVADO VS. PREDICHO
+  - 4 de 19 departamentos quedan a menos de 10% de lo que predice el modelo.
+  - El mayor desvío positivo es Río Negro (50,2%) y el negativo Salto (-20,0%).
+
+9.6 MAPA DE CORRELACIONES
+  - El par más correlacionado es Univ_%–Ingreso_percapita (r = 0.82).
+  - Las correlaciones descontando el año difieren hasta 0,12 de las de promedios: son estables.
+
+9.7 EVOLUCIÓN DEL DESEMPLEO
+  - El desempleo promedio tocó su mínimo en 2011 (5,9%) y su máximo reciente en 2020 (10,5%).
+  - La dispersión entre departamentos pasó de 1,9 a 3,0 p.p. (desvío estándar): más desigual al final del período.
+
+9.8 DISPERSIÓN DE LA POBREZA
+  - La mediana de pobreza bajó de 32,9% en 2006 a 7,8% en 2023.
+  - La distancia entre departamentos (rango intercuartil) pasó de 10,4 a 7,4 p.p.: los departamentos convergieron a niveles de pobreza más parecidos.
+  - En 2020 la mediana subió de 7,2% a 11,4% (efecto pandemia).
+
+9.9 TENDENCIAS POR DEPARTAMENTO
+  - Pobreza: mejora en 19 de 19 departamentos.
+  - Desempleo: mejora en 6 de 19 departamentos.
+  - Actividad: mejora en 14 de 19 departamentos.
+  - Patrón general: mejora social amplia (pobreza) con un mercado laboral que no acompañó (desempleo).
+
+9.11 MAPA INTERACTIVO
+  - Hay un patrón norte–sur: cuanto más al norte, menor actividad (r = -0.52 con la latitud; -0.44 sin Montevideo).
+  - Actividad promedio en la mitad norte: 0,82; en la mitad sur: 0,98.
+  - Los departamentos de frontera con Brasil (Artigas, Rivera, Cerro Largo, Treinta y Tres) quedan en promedio en el puesto 15,2 de 19 en actividad.
+
+LIMITACIONES
+  - 19 departamentos: el modelo admite pocas variables y los resultados son asociaciones.
+  - Educación sin datos 2020-2021 (esos años quedan fuera del modelo).
+  - El modelo usa los años en que hay dato de actividad y de todas las predictoras: 2006-2018.
+  - El dato de actividad 2015-2018 es preliminar (OPP) y se combina con estimaciones académicas para 2000-2007.
